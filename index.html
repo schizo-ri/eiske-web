@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/src/reboot.css" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <div id="offscreen"></div>
+    <div id="root">
+      <nav id="main-nav">
+        <div id="wrap-logo" class="ml-3">
+          <img src="/images/eiskePDF.png" width="80" alt="eiske" />
+        </div>
+        <ul id="main-nav-links">
+          <li><a href="#" class="main-nav-link">Home</a></li>
+          <li><a href="#" class="main-nav-link">O nama</a></li>
+          <li><a href="#" class="main-nav-link">Projekti</a></li>
+          <li><a href="#" class="main-nav-link">Kontakt</a></li>
+        </ul>
+        <div class="mr-3">
+          <select id="language-picker">
+            <option value="en">HR</option>
+            <option value="hr">EN</option>
+          </select>
+        </div>
+      </nav>
+      <section id="content">
+        <article class="jumbo">
+          <div class="jumbo-back">
+            <picture>
+              <source
+                type="image/webp"
+                media="(orientation: landscape)"
+                srcset="
+                  images/Kvarner350_p.webp   350w,
+                  images/Kvarner960_l.webp   960w,
+                  images/Kvarner1920_l.webp 1200w
+                "
+                sizes="(min-width: 60rem) 80vw, (min-width: 40rem) 90vw, 100vw"
+              />
+              <source
+                type="image/webp"
+                media="(orientation: portrait)"
+                srcset="
+                  images/Kvarner350_p.webp 160w,
+                  images/Kvarner640_l.webp 400w,
+                  images/Kvarner960_l.webp 600w
+                "
+                sizes="(min-width: 60rem) 80vw, (min-width: 40rem) 90vw, 100vw"
+              />
+              <img src="images/Kvarner1920_l.jpg" alt="Kvarner landscape" />
+            </picture>
+            <!-- <img
+              class="img-contained"
+              src="images/Kvarner1920_l.jpg"
+              alt="kvarner"
+            /> -->
+          </div>
+          <div class="jumbo-moto moto-1">
+            <!-- <img src="images/eiskePDF.png" alt="eiske" /> -->
+            <h1 class="thin-title">let's get connected</h1>
+            <h4 class="thin-title">
+              we are a team with great experience in large projects
+            </h4>
+            <h5 class="thin-title">
+              check out our references in wide variety of industries with our
+              satisfied customers and partners
+            </h5>
+            <a id="refrences-link" class="big-button" href="#">refrences</a>
+          </div>
+        </article>
+        <!-- <div id="wrap-fader">
+          <article class="fader-page fade-in" data-fader-page="0">
+            <img
+              class="img-contained"
+              src="/images/Kvarner.jpg"
+              alt="kvarner"
+            />
+          </article> -->
+        <!-- <article class="fader-page fade-out" data-fader-page="1">
+            <img class="img-contained" src="/images/eisKE.jpg" alt="eiske" />
+          </article>
+          <article class="fader-page fade-out" data-fader-page="2">
+            <img class="img-contained" src="/images/let_.jpg" alt="moto" />
+          </article>
+          <article class="fader-page fade-out" data-fader-page="3">
+            <img class="img-contained" src="/images/struja.jpg" alt="cabinet" />
+          </article>
+        </div> -->
+        <!-- <img src="images/eiskePDF.png" alt="eiske" /> -->
+        <div id="wrap-excerpts" class="centered-container">
+          <article class="card">
+            <img
+              src="images/about.svg"
+              class="card-image"
+              width="60"
+              alt="About us"
+            />
+            <!-- <img
+                    class="card-image"
+                    src="images/struja.jpg"
+                    alt="struja"
+                  /> -->
+            <header>
+              <h2>O nama</h2>
+              <!-- <h3>More</h3> -->
+            </header>
+            <div class="card-body">
+              Kvarner Elektro, established in year 2006., is providing wide
+              range of services in electrical installation. We are team of young
+              people with worldwide experience.
+            </div>
+            <footer><a href="#">More</a></footer>
+          </article>
+          <article class="card">
+            <img
+              src="images/work.svg"
+              class="card-image"
+              width="60"
+              alt="Work"
+            />
+            <header>
+              <h2>Djelatnost</h2>
+              <!-- <h3>More</h3> -->
+            </header>
+            <div class="card-body">
+              Installation meterial supply & Cabling, wiring, installation &
+              Installation supervision and testing & Testing, equipment
+              commissioning & Much more...
+            </div>
+            <footer><a href="#">More</a></footer>
+          </article>
+          <article class="card">
+            <img
+              src="images/projects.svg"
+              class="card-image"
+              width="60"
+              alt="Projects"
+            />
+            <header>
+              <h2>Projekti i suradnici</h2>
+              <!-- <h3>More</h3> -->
+            </header>
+            <div class="card-body">
+              We have done worldwide projects with our associates. Antartica
+              remains only continent where we haven't done any project yet but
+              never say never.
+            </div>
+            <footer><a href="#">More</a></footer>
+          </article>
+        </div>
+        <!-- <div class="centered-container-container">
+          <div id="wrap-excerpts" class="centered-container">
+            <article class="card">
+              <img class="card-image" src="images/struja.jpg" alt="struja" />
+              <header><h2>O nama</h2></header>
+              <div class="card-body">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </div>
+              <footer><a href="#">More</a></footer>
+            </article>
+            <article class="card">
+              <header><h2>Djelatnost</h2></header>
+              <div class="card-body">
+                It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially
+                unchanged.
+              </div>
+              <footer><a href="#">More</a></footer>
+            </article>
+            <article class="card">
+              <header><h2>Projekti i suradnici</h2></header>
+              <div class="card-body">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised
+                in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages.
+              </div>
+              <footer><a href="#">More</a></footer>
+            </article>
+          </div>
+        </div> -->
+        <article id="wrap-world">
+          <div class="text-white m-3 width-mobile">
+            <h3 class="thin-title">Our projects on a world map</h3>
+            <p>
+              <i
+                >Check all the places we have visited and worked at. Press the
+                <span class="text-accent">dots</span> to see short summary of a
+                work we've done.</i
+              >
+            </p>
+          </div>
+          <div class="">
+            <img class="img-cover" src="images/world.svg" alt="kvarner" />
+          </div>
+        </article>
+        <div id="wrap-contact">
+          <div id="contact-columns" class="centered-container">
+            <div id="contact-action-call">
+              <h2><a href="#">get in touch with us.</a></h2>
+            </div>
+            <div>
+              <p>
+                It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages,
+              </p>
+              <div>
+                <a href="#">let's get connected</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="wrap-location"></div>
+      </section>
+      <footer id="page-footer">
+        <div id="footer-columns">
+          <div>
+            <h3 class="thin-title">
+              Kvarner Elektro Ltd, Skvažići 5, 51216 Viškovo
+            </h3>
+            <ul>
+              <li>
+                Telephone:
+                <ul>
+                  <li>
+                    <a href="tel:+385913339883" class="text-secondary"
+                      >+385 91 333 98 83</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                E-mail:
+                <ul>
+                  <li>
+                    <a
+                      href="mailto:info@kvarnerelektro.hr"
+                      class="text-secondary"
+                      >info@eiske.hr</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>OIB: 35978144029</li>
+              <li>IBAN: HR1324840081103435352</li>
+              <li>SWIFT: RZBHHR2X</li>
+            </ul>
+            <a
+              href="mailto:edin.lockedin@gmail.com?subject=Reporting%20web%20site%20problem&body=Problem%20description%3A%0A"
+              class="text-invert"
+              ><small>Report a problem</small></a
+            >
+          </div>
+          <div id="social-media">
+            <img
+              src="images/linkedin.svg"
+              width="40"
+              class="ml-3"
+              alt="linkedin"
+            />
+            <img
+              src="images/instagram.svg"
+              width="40"
+              class="ml-3"
+              alt="instagram"
+            />
+            <img
+              src="images/whatsapp.svg"
+              width="40"
+              class="ml-3"
+              alt="whatsapp"
+            />
+          </div>
+        </div>
+        <div id="footer-legal">
+          <p>
+            Social icons made by
+            <a
+              href="https://www.flaticon.com/authors/freepik"
+              class="text-secondary"
+              title="Freepik"
+              >Freepik</a
+            >
+            from
+            <a
+              href="https://www.flaticon.com/"
+              class="text-secondary"
+              title="Flaticon"
+              >www.flaticon.com</a
+            >. Work icon made by
+            <a
+              href="https://www.flaticon.com/authors/monkik"
+              title="monkik"
+              class="text-secondary"
+              >monkik</a
+            >
+            from
+            <a
+              href="https://www.flaticon.com/"
+              title="Flaticon"
+              class="text-secondary"
+              >www.flaticon.com</a
+            >. About and project icons made by
+            <a
+              href="https://www.flaticon.com/authors/eucalyp"
+              title="Eucalyp"
+              class="text-secondary"
+              >Eucalyp</a
+            >
+            from
+            <a
+              href="https://www.flaticon.com/"
+              title="Flaticon"
+              class="text-secondary"
+              >www.flaticon.com</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- <script src="src/index.js"></script> -->
+  </body>
+</html>
